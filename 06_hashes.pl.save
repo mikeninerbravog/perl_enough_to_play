@@ -1,0 +1,44 @@
+use strict;
+use warnings;
+
+use Data::Dumper;
+
+# hashes ~ dictionaries in other languages
+
+my %countries = (
+
+	england => "small",
+	australia => "large",
+	germany => "medium",
+
+);
+
+# Accessing
+my $sizeOfEngland = $countries{"england"};
+
+
+# Add
+$countries{"peru"} = "very large";
+
+# Change
+$countries{"england"} = "very very very large";
+
+# Delete
+delete $countries{"peru"};
+
+print Dumper(\%countries);
+
+# qw hash
+
+my %hash_food_qw = qw(
+
+	burger 500
+	chips 200
+	cola 400
+
+);
+
+print $hash_foohash_food_qwd_qw{"burger"}, "\n";
+
+
+print Dumper(\%);
