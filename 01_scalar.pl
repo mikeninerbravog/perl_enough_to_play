@@ -20,10 +20,13 @@ if (1==1) {
 
 print $name, "\n";
 
+# Just more code to testing...
 
-$foo = 1 + 9;
-$bar = "FOOBAR";
+my $foo = 1 + 9;
+my $bar = "FOOBAR";
 
-$see = $foo.$bar;
+my $see = $foo.$bar;
 
 print $see;
+
+system("date");
